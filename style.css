@@ -553,18 +553,42 @@ idth: 100%;
         margin: 10px 20px;
         box-shadow: 0 0 7px grey;
         height: 199px;
+		transition-duration: 0.7s;
+		
     }
 	.gallery a:hover {
-        border-radius: 50%;
-		transition-delay: 0.1s;
+			opacity: 0.9;
+    transform: scale(1.05,1.07);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+	transition-duration: 0.7s;
+         
     }
     
 	
-    .images img {}
+    .images img {
+		opacity: 1;
+		transform: scale(1,1);
+		transition-timing-function: ease-out;
+		transition-duration: 250ms;
+		-webkit-transform: scale(1,1);
+		-webkit-transition-timing-function: ease-out;
+		-webkit-transition-duration: 250ms;
+		-moz-transform: scale(1,1);
+		-moz-transition-timing-function: ease-out;
+		-moz-transition-duration: 250ms;
+	}
 	.images img:hover{
 		
-		border-radius: 50%;
-		transition-delay: 0.1s;
+		
 		
 	}
 	
